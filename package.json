@@ -1,0 +1,17 @@
+{
+  "name": "n",
+  "version": "1.0.0",
+  "description": "This is a project to make NoteApp Website",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tanay Dubey",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  }
+}
