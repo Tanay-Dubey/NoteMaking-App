@@ -13,16 +13,40 @@
 
 <body>
 
+  <div id="sidebar" class="sidebar-mobile">
+    <ul style="width:100%;" class="list-group">
+      <li class="sidelist list-group-item active-list"><a href="#">My Activites</a></li>
+      <li class="sidelist list-group-item"><a href="#">Quick Notes</a></li>
+      <li class="sidelist list-group-item"><a href="#">To-Do Lists</a></li>
+      <li class="sidelist list-group-item"><a href="#">My Notebooks</a></li>
+    </ul>
+
+  </div>
+
   <nav>
     <button class="btn navbtn" onclick="opennav()">
       <i class="fa fa-bars"></i>
     </button>
   </nav>
 
-  <div id="sidebar">
-      
-  </div>
+
   <div id="overlay" onclick="closenav()"></div>
+
+  <div id="activity" class="content">
+      <div class="default-page"><h1>You do not have any activity</h1></div>
+  </div>
+
+  <div id="qnotes">
+
+  </div>
+
+  <div id="tdlist">
+
+  </div>
+
+  <div id="notebook">
+
+  </div>
 
 
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

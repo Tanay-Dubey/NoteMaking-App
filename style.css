@@ -10,17 +10,6 @@ nav{
     height: 40px;
 }
 
-#sidebar{
-    width:250px;
-    background-color:rgb(90, 94, 100);
-    height:100vh;
-    display:flex;
-    position:fixed;
-    overflow-x:hidden;
-    z-index:9999;
-    transition:0.5s;
-}
-
 .navbtn{
     background-color: rgb(181, 216, 240);
     height:40px;
@@ -29,24 +18,70 @@ nav{
     margin-left:10px;
 }
 
+.sidebar-mobile{
+    width:240px;
+    background-color:rgb(90, 94, 100);
+    height:100vh;
+    display:flex;
+    position:fixed;
+    justify-content: center;
+    overflow:auto;
+}
+
+.sidelist{
+    list-style-type: none;
+    margin:10px;
+    font-size: 20px;
+    transition: font-size 0.5s;
+    margin-left:0px;
+    background-color:rgb(90, 94, 100) ;
+}
+
+.sidelist:hover,.active-list{
+    font-size:25px;
+    color:white;
+    cursor:pointer;
+}
+
+a,a:hover{
+    text-decoration: none;
+    color:inherit;
+}
+
 #overlay {
     display: none;
     position: fixed;
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.7);
-    z-index: 998;
+
     opacity: 1;
+}
+
+.default-page{
+    color:rgb(153, 147, 147)
+}
+
+.content{
+    margin-left:260px;
+    padding:10px;
 }
 
 @media only screen and (max-width:900px)
 {
-    #sidebar{
+
+    .sidebar-mobile{
         display:none;
+        transition:width 2s;
+        z-index:9999;
     }
 
     .navbtn{
         display: block;
 
+    }
+
+    .content{
+        margin-left:0;
     }
 }

@@ -1,15 +1,15 @@
 function opennav()
 {
-    if(document.querySelector("#sidebar").classList.contains("active")==false)
+    if(document.querySelector(".sidebar-mobile").classList.contains("active")==false)
     {
-        document.querySelector("#sidebar").classList.add("active")
-        document.querySelector("#sidebar").style.display="block";
+        document.querySelector(".sidebar-mobile").classList.add("active")
+        document.querySelector(".sidebar-mobile").style.display="block";
         document.querySelector("#overlay").style.display="block";
     }
     else
     {
-        document.querySelector("#sidebar").classList.remove("active")
-        document.querySelector("#sidebar").style.display="none";
+        document.querySelector(".sidebar-mobile").classList.remove("active")
+        document.querySelector(".sidebar-mobile").style.display="none";
         document.querySelector("#overlay").style.display="none";
     }
 
@@ -19,5 +19,5 @@ function opennav()
 function closenav()
 {
     document.querySelector("#overlay").style.display="none";
-    document.querySelector("#sidebar").style.display="none";
+    document.querySelector(".sidebar-mobile").style.display="none";
 }
